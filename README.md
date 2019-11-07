@@ -13,8 +13,7 @@ The following provides more details about the architecture of the suite, users i
 
 The suite is implemented in ``src/aqm-eval-suite`` directory.
 
-Model
-=====
+## Model
 
 ``src/aqm-eval-suite/model`` contains an implementation of the following three
 primary classes:
@@ -152,7 +151,7 @@ Following are the packages required for the suite and their installation instruc
 * imagemagick (optional package for ns-3): apt-get install imagemagick
 
 
-## The Network Simulator, Version 3
+# The Network Simulator, Version 3
 
 Much more substantial information about **ns-3** can be found [here](http://www.nsnam.org)
 
