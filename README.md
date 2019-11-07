@@ -7,16 +7,16 @@ there in the previous version of the suite and publish it on **ns-3 app store**.
 
 ## The Network Simulator, Version 3
 
-Much more substantial information about **ns-3** can be found [!here](http://www.nsnam.org)
+Much more substantial information about **ns-3** can be found [here](http://www.nsnam.org)
 
 ### 1) An Open Source project
 
 **NS-3** is a free open source project aiming to build a discrete-event network simulator targeted for simulation research and education.   
 This is a collaborative project; we hope that the missing pieces of the models we have not yet implemented will be contributed by the community in an open collaboration process.
  
-The process of contributing to the ns-3 project varies with the people involved, the amount of time they can invest and the type of model they want to work on, but the current process that the project tries to follow is described [!here](http://www.nsnam.org/developers/contributing-code/)
+The process of contributing to the ns-3 project varies with the people involved, the amount of time they can invest and the type of model they want to work on, but the current process that the project tries to follow is described [here](http://www.nsnam.org/developers/contributing-code/)
 
-This README excerpts some details from a more extensive tutorial that is maintained [!here](http://www.nsnam.org/documentation/latest/)
+This README excerpts some details from a more extensive tutorial that is maintained [here](http://www.nsnam.org/documentation/latest/)
 
 ### 2) Building ns-3
 
