@@ -51,8 +51,7 @@ primary classes:
   (as the enqueue time) and when the packet is dequeued, the queue delay is computed
   as the difference between the dequeue time and the enqueue time.
 
-Helper
-======
+## Helper
 
 ``src/aqm-eval-suite/helper`` contains an implementation of the following class:
 
@@ -64,9 +63,8 @@ Helper
   * ``ScenarioImpl::RunSimulation ()``: This method takes the scenario created by
     each subclass and runs them with all the queue disciplines available in ns-3.
 
-Utils
-=====
-
+## Utils
+ 
 ``src/aqm-eval-suite/utils`` directory provides four Python scripts that take
 performance metrics computed in the suite as input, and generate a graph with
 Queuing Delay as the X-axis against Goodput as the Y-axis. The graph depicts an
@@ -75,17 +73,16 @@ The co-variance between the queuing delay and goodput is determined by the
 orientation of the ellipse, and helps to analyze the effect of traffic load on
 Goodput and Queuing Delay.
 
-Examples
-========
+## Examples
+
 
 ``src/aqm-eval-suite/examples`` directory provides a set of programs, each
 corresponding to a specific scenario listed in RFC 7928. Each program can be
 run individually. Alternatively, `aqm-eval-suite-runner.cc` allows the user
 to run all scenarios at once.
 
-User interaction with the suite
-===============================
-
+## User interaction with the suite
+ 
 Users can learn about the list of scenarios available in the suite from
 ``src/aqm-eval/examples`` directory. The programs can be run in a usual way.
 For example, ``aggressive-transport-sender.cc`` is equivalent to the scenario
@@ -103,8 +100,7 @@ To run all scenarios at once, the following command could be used:
     ./waf --run "aqm-eval-suite-runner --name=All"
  
  
-Simulating additional AQM algorithms using this suite
-=====================================================
+## Simulating additional AQM algorithms using this suite
 
 * By default, the suite evaluates AQM algorithms implemented in |ns3|. To
   simulate additional AQM algorithms, such as the ones designed by the user,
@@ -125,8 +121,7 @@ Simulating additional AQM algorithms using this suite
         .
       }
 
-Scope and limitations of the suite
-==================================
+## Scope and limitations of the suite
 
 * All scenarios described in Section 5, 6 and 8 of RFC 7928 are supported.
 
@@ -137,8 +132,7 @@ Scope and limitations of the suite
 
 * Multi-AQM scenarios are not yet supported.
 
-Packages Required for Processing Metrics and Graphing
-=====================================================
+## Packages Required for Processing Metrics and Graphing
 
 Following are the packages required for the suite and their installation instruction in Ubuntu
 
@@ -155,7 +149,7 @@ Following are the packages required for the suite and their installation instruc
 
 Much more substantial information about **ns-3** can be found [here](http://www.nsnam.org)
 
-### 1) An Open Source project
+## 1) An Open Source project
 
 **NS-3** is a free open source project aiming to build a discrete-event network simulator targeted for simulation research and education.   
 This is a collaborative project; we hope that the missing pieces of the models we have not yet implemented will be contributed by the community in an open collaboration process.
@@ -164,7 +158,7 @@ The process of contributing to the ns-3 project varies with the people involved,
 
 This README excerpts some details from a more extensive tutorial that is maintained [here](http://www.nsnam.org/documentation/latest/)
 
-### 2) Building ns-3
+## 2) Building ns-3
 
 The code for the framework and the default models provided by **ns-3** is built as a set of libraries. User simulations are expected to be written as simple programs that make use of these **ns-3** libraries.
  
@@ -184,7 +178,7 @@ The current codebase is expected to build and run on the set of platforms listed
  
 Other platforms may or may not work: we welcome patches to improve the portability of the code to these other platforms. 
 
-### 3) Running ns-3
+## 3) Running ns-3
  
 On recent Linux systems, once you have built **ns-3** (with examples enabled), it should be easy to run the sample programs with the following command, such as:
 
@@ -192,7 +186,7 @@ On recent Linux systems, once you have built **ns-3** (with examples enabled), i
 
 That program should generate a *simple-global-routing.tr* text trace file and a set of simple-global-routing-xx-xx.pcap binary pcap trace files, which can be read by *tcpdump -tt -r filename.pcap* The program source can be found in the *examples/routing* directory.
 
-### 4) Getting access to the ns-3 documentation
+## 4) Getting access to the ns-3 documentation
 
 Once you have verified that your build of ns-3 works by running the simple-point-to-point example as outlined in **3)** above, it is quite likely that you will want to get started on reading some **ns-3** documentation. 
 
@@ -213,7 +207,7 @@ This documentation includes:
     a reference manual, most likely not very well suited 
     as introductory [text](http://www.nsnam.org/doxygen/index.html)
 
-### 5) Working with the development version of ns-3
+## 5) Working with the development version of ns-3
 
 If you want to download and use the development version of **ns-3**, you need to use the tool 'mercurial'. A quick and dirty cheat sheet is included in *doc/mercurial.txt* but reading through the mercurial tutorials included on the mercurial website is usually a good idea if you are not familiar with it.
 
