@@ -85,7 +85,7 @@ run individually. Alternatively, `aqm-eval-suite-runner.cc` allows the user
 to run all scenarios at once.
 
 User interaction with the suite
-*******************************
+===============================
 
 Users can learn about the list of scenarios available in the suite from
 ``src/aqm-eval/examples`` directory. The programs can be run in a usual way.
@@ -108,9 +108,9 @@ To run all scenarios at once, the following command could be used:
 ::
 
    ./waf --run "aqm-eval-suite-runner --name=All"
-
+ 
 Simulating additional AQM algorithms using this suite
-*****************************************************
+=====================================================
 
 * By default, the suite evaluates AQM algorithms implemented in |ns3|. To
   simulate additional AQM algorithms, such as the ones designed by the user,
@@ -133,7 +133,7 @@ Simulating additional AQM algorithms using this suite
   }
 
 Scope and limitations of the suite
-**********************************
+==================================
 
 * All scenarios described in Section 5, 6 and 8 of RFC 7928 are supported.
 
@@ -145,7 +145,7 @@ Scope and limitations of the suite
 * Multi-AQM scenarios are not yet supported.
 
 Packages Required for Processing Metrics and Graphing
-*****************************************************
+=====================================================
 
 Following are the packages required for the suite and their installation instruction in Ubuntu
 
