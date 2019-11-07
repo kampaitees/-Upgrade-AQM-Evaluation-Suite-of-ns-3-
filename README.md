@@ -93,21 +93,16 @@ For example, ``aggressive-transport-sender.cc`` is equivalent to the scenario
 described in Section 5.2 of the RFC. Assuming examples have been enabled
 during configure, the following commands would run ``aggressive-transport-sender.cc``
 
-::
-
-   ./waf --run "aqm-eval-suite-runner --number=5.2"
+    ./waf --run "aqm-eval-suite-runner --number=5.2"
 
 or
 
-::
-
-   ./waf --run "aqm-eval-suite-runner --name=AggressiveTransportSender"
+    ./waf --run "aqm-eval-suite-runner --name=AggressiveTransportSender"
 
 To run all scenarios at once, the following command could be used:
 
-::
-
-   ./waf --run "aqm-eval-suite-runner --name=All"
+    ./waf --run "aqm-eval-suite-runner --name=All"
+ 
  
 Simulating additional AQM algorithms using this suite
 =====================================================
@@ -119,18 +114,17 @@ Simulating additional AQM algorithms using this suite
   of typeId ``ns3::ExampleQueueDisc`` in ``aggressive-transport-sender.cc``,
   ``CreateScenario`` method can be modified as shown in the code below:
 
-.. code-block:: c++
 
-  EvaluationTopology
-  AggressiveTransportSender::CreateScenario (std::string aqm)
-  {
-    .
-    .
-    addAQM ("ns3::ExampleQueueDisc");
-    EvaluationTopology et ("AggressiveTransportSender", nflow, pointToPoint, aqm, 1460);
-    .
-    .
-  }
+      EvaluationTopology
+      AggressiveTransportSender::CreateScenario (std::string aqm)
+      {
+        .
+        .
+        addAQM ("ns3::ExampleQueueDisc");
+        EvaluationTopology et ("AggressiveTransportSender", nflow, pointToPoint, aqm, 1460);
+        .
+        .
+      }
 
 Scope and limitations of the suite
 ==================================
