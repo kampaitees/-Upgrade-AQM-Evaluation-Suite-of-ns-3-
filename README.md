@@ -1,9 +1,6 @@
 # Upgrade-AQM-Evaluation-Suite-of-ns-3
 
-**AQM Evaluation Suite** is an automated framework to evaluate the AQM algorithms implemented in **ns-3**. Although it works with the latest 
-*ns-3-dev*, there is a lot of redundant code that can be now removed from the suite to make it lightweight and optimized. The aim of 
-this project is to optimize the suite and add additional functionality in the suite like adding the **COBALT** algorithm which was not 
-there in the previous version of the suite and publish it on **ns-3 app store**.
+**AQM Evaluation Suite** is an automated framework to evaluate the **AQM** algorithms implemented in **ns-3**. Although it works with the latest **ns-3-dev**, there is a lot of redundant code that can be now removed from the suite to make it lightweight and optimized. The aim of this project is to optimize the suite and add additional functionality in the suite like adding the **COBALT** algorithm which was not there in the previous version of the suite and publish it on **ns-3 app store**.
 
 ## The Network Simulator, Version 3
 
@@ -22,7 +19,7 @@ This README excerpts some details from a more extensive tutorial that is maintai
 
 The code for the framework and the default models provided by **ns-3** is built as a set of libraries. User simulations are expected to be written as simple programs that make use of these **ns-3** libraries.
  
-To build the set of default libraries and the example programs included in this package, you need to use the tool **waf**. Detailed information on how to use waf is included in the file **doc/build.txt**
+To build the set of default libraries and the example programs included in this package, you need to use the tool **waf**. Detailed information on how to use waf is included in the file *doc/build.txt*
 
 However, the real quick and dirty way to get started is to type the command
 
@@ -32,7 +29,7 @@ followed by
   
     ./waf 
   
-in the directory which contains this README file. The files built will be copied in the **build/** directory.
+in the directory which contains this README file. The files built will be copied in the *build/* directory.
 
 The current codebase is expected to build and run on the set of platforms listed in the RELEASE_NOTES file.
  
@@ -44,14 +41,14 @@ On recent Linux systems, once you have built **ns-3** (with examples enabled), i
 
     ./waf --run simple-global-routing
 
-That program should generate a simple-global-routing.tr text trace file and a set of simple-global-routing-xx-xx.pcap binary pcap trace files, which can be read by *tcpdump -tt -r filename.pcap* The program source can be found in the *examples/routing* directory.
+That program should generate a *simple-global-routing.tr* text trace file and a set of simple-global-routing-xx-xx.pcap binary pcap trace files, which can be read by *tcpdump -tt -r filename.pcap* The program source can be found in the *examples/routing* directory.
 
 ### 4) Getting access to the ns-3 documentation
 
-Once you have verified that your build of ns-3 works by running the simple-point-to-point example as outlined in **3)** above, it is quite likely that you will want to get started on reading some ns-3 documentation. 
+Once you have verified that your build of ns-3 works by running the simple-point-to-point example as outlined in **3)** above, it is quite likely that you will want to get started on reading some **ns-3** documentation. 
 
 All of that documentation should always be available from
-the ns-3 [!website](http://www.nsnam.org/documentation/).
+the **ns-3** [website](http://www.nsnam.org/documentation/).
 
 This documentation includes:
 
@@ -61,15 +58,15 @@ This documentation includes:
 
   - models in the ns-3 model library
 
-  - a wiki for user-contributed tips [!here](http://www.nsnam.org/wiki/)
+  - a wiki for user-contributed tips [here](http://www.nsnam.org/wiki/)
 
   - API documentation generated using doxygen: this is
     a reference manual, most likely not very well suited 
-    as introductory [!text](http://www.nsnam.org/doxygen/index.html)
+    as introductory [text](http://www.nsnam.org/doxygen/index.html)
 
 ### 5) Working with the development version of ns-3
 
-If you want to download and use the development version of ns-3, you need to use the tool 'mercurial'. A quick and dirty cheat sheet is included in doc/mercurial.txt but reading through the mercurial tutorials included on the mercurial website is usually a good idea if you are not familiar with it.
+If you want to download and use the development version of **ns-3**, you need to use the tool 'mercurial'. A quick and dirty cheat sheet is included in *doc/mercurial.txt* but reading through the mercurial tutorials included on the mercurial website is usually a good idea if you are not familiar with it.
 
 If you have successfully installed mercurial, you can get a copy of the development version with the following command:
       
